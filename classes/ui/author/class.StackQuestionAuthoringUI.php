@@ -308,10 +308,14 @@ class StackQuestionAuthoringUI
             }
             $graph->layout();
             $roots = $graph->get_roots();
-            if (empty($fromform->isbroken) && (count($roots) != 1 || $graph->get_broken_cycles())) {
+            if ($graph->get_broken_cycles()) {
                 throw new StackException('The PRT ' . $prt_name . ' is malformed.');
             }
-            $first_node = key($roots) - 1;
+
+            $first_node = $this->question->prts[$prt_name]->get_first_node();
+            if (count($roots) === 1 || !array_key_exists($first_node, $prt_data->nodes)) {
+                $first_node = key($roots) - 1;
+            }
 
             $prt_data->firstnodename = $first_node;
 
