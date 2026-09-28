@@ -65,11 +65,15 @@ if (!defined('IGNORE_MISSING')) {
 
 $CFG = new stdClass;
 // the base url of the installation (without script)
-$CFG->wwwroot = ilUtil::_getHttpPath();
+$CFG->wwwroot = (isset($GLOBALS['DIC']) && $GLOBALS['DIC']->offsetExists('ilIliasIniFile'))
+    ? ilUtil::_getHttpPath()
+    : '';
 // the server path of the installation
 $CFG->dirroot = realpath(dirname(__FILE__) . '/../..');
 // the data directory of the plugin
-$CFG->dataroot = ILIAS_WEB_DIR . "/".CLIENT_ID . '/xqcas';
+$CFG->dataroot = (defined('ILIAS_WEB_DIR') && defined('CLIENT_ID'))
+    ? ILIAS_WEB_DIR . "/" . CLIENT_ID . '/xqcas'
+    : '';
 $GLOBALS['CFG'] =& $CFG;
 
 if (!class_exists('moodle_exception')) {
