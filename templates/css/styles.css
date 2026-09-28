@@ -68,3 +68,34 @@ div.matrixcurlybrackets:after {
 
 }
 
+.answer:has(.option input[type="radio"]),
+.answer:has(.option input[type="checkbox"]) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    margin: 0.75rem 0;
+}
+
+.answer .option:has(input[type="radio"]),
+.answer .option:has(input[type="checkbox"]) {
+    align-items: flex-start;
+    display: flex;
+    gap: 0.5rem;
+    line-height: 1.35;
+    padding: 0.25rem 0.4rem;
+}
+
+.answer .option input[type="radio"],
+.answer .option input[type="checkbox"] {
+    flex: 0 0 auto;
+    margin: 0.2rem 0 0;
+}
+
+.answer .option:has(input[type="radio"]) label,
+.answer .option:has(input[type="checkbox"]) label {
+    cursor: pointer;
+    flex: 1 1 auto;
+    font-weight: 400;
+    margin: 0;
+}
+
