@@ -28,6 +28,7 @@ use classes\ui\StackScoringTableData;
 use Expand;
 use ilCtrl;
 use ilCtrlException;
+use ILIAS\Refinery\Factory as Refinery;
 use ILIAS\UI\Component\Input\Container\Form\Standard;
 use ILIAS\UI\Factory;
 use ILIAS\UI\Renderer;
@@ -43,6 +44,7 @@ class ScoringUI
     private ilassStackQuestionPlugin $plugin;
     private Factory $factory;
     private Renderer $renderer;
+    private Refinery $refinery;
     private ilCtrl $control;
     private assStackQuestion $question;
     private float $questionPoints;
@@ -64,6 +66,7 @@ class ScoringUI
         $this->questionPoints = $questionPoints;
         $this->factory = $DIC->ui()->factory();
         $this->renderer = $DIC->ui()->renderer();
+        $this->refinery = $DIC->refinery();
         $this->control = $DIC->ctrl();
         $this->request = $DIC->http()->request();
     }
@@ -120,8 +123,9 @@ class ScoringUI
     {
         $info = $this->plugin->txt("sco_current_scoring_info") . "<br>" . $this->plugin->txt('sco_info') . "</br>";
         $inputs = [
-            "points" => $this->factory->input()->field()->numeric($this->plugin->txt("sco_current_scoring_form_input"), $info)
-                ->withValue($this->question->getPoints()),
+            "points" => $this->factory->input()->field()->text($this->plugin->txt("sco_current_scoring_form_input"), $info)
+                ->withAdditionalTransformation($this->refinery->kindlyTo()->float())
+                ->withValue((string) $this->question->getPoints()),
         ];
 
         return $this->factory->input()->container()->form()->standard(
