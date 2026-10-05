@@ -601,14 +601,14 @@ class StackQuestionAuthoringUI
             "4" => $this->plugin->txt('input_stars_implied_spaces'),
             "5" => $this->plugin->txt('input_type_implied_spaces_single')
         ], $this->plugin->txt("input_insert_stars_info"))->withRequired(true)
-            ->withValue($input->get_parameter('insertStars'));
+            ->withValue($input->get_parameter('insertStars', 0));
         $inputs["syntaxHint"] = $this->factory->input()->field()->text($this->plugin->txt("input_syntax_hint"), $this->plugin->txt("input_syntax_hint_info"))
             ->withValue($input->get_parameter('syntaxHint', ""));
         $inputs["syntaxAttribute"] = $this->factory->input()->field()->select($this->plugin->txt("hint_mode"), [
             0 => $this->plugin->txt('value'),
             1 => $this->plugin->txt('placeholder')
         ])->withRequired(true)
-            ->withValue($input->get_parameter('syntaxAttribute'));
+            ->withValue($input->get_parameter('syntaxAttribute', 0));
         $inputs["forbidWords"] = $this->factory->input()->field()->text($this->plugin->txt("input_forbidden_words"), $this->plugin->txt("input_forbidden_words_info"))
             ->withValue((string) $input->get_parameter('forbidWords', ""));
         $inputs["forbidFloats"] = $this->factory->input()->field()->checkbox($this->plugin->txt("input_forbid_float"), $this->plugin->txt("input_forbid_float_info"))
