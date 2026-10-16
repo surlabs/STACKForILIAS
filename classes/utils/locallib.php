@@ -225,7 +225,7 @@ function stack_string_sanitise($str)
 	$str = str_ireplace('<!--', '&lt;!--', $str);
 	$str = str_ireplace('-->', '--&gt;', $str);
 
-	$pat = array('/(on)([a-z]+[ ]*)(=)/', '/(href)([ ]*)(=)/', '/(src)([ ]*)(=)/');
+	$pat = array('/(on)([a-z]+[\s]*)(=)/i', '/(href)([\s]*)(=)/i', '/(src)([\s]*)(=)/i');
 	$rep = array('on&#0;$2&#0;&#61;', 'href&#0;$2&#61;', 'src&#0;$2&#61;');
 	$str = preg_replace($pat, $rep, $str);
 	return $str;
