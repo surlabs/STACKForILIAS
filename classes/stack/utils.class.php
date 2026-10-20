@@ -595,7 +595,7 @@ class stack_utils {
         $list = substr($list, 1, strlen($list) - 2); // Trims outermost [] only.
         $e = self::next_element($list, $delim);
         while ($e !== null) {
-            if ($e[0] == '[') {
+            if ($e !== '' && $e[0] == '[') {
                 if ($rec) {
                     $array[] = self::list_to_array_workhorse($e, $rec, $delim);
                 } else {
