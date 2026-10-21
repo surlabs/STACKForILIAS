@@ -113,6 +113,10 @@ class StackQuestionAuthoringUI
         }
 
         $this->ctrl->setParameterByClass("assStackQuestionGUI", "save_stack_question", "yes");
+        if ($this->question->getId() > 0) {
+            $this->ctrl->setParameterByClass("ilObjQuestionPoolGUI", "q_id", $this->question->getId());
+            $this->ctrl->setParameterByClass("assStackQuestionGUI", "q_id", $this->question->getId());
+        }
         return $this->factory->input()->container()->form()->standard(
             $this->ctrl->getLinkTargetByClass("assStackQuestionGUI", "save"),
             $sections
