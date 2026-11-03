@@ -603,7 +603,9 @@ class StackQuestionAuthoringUI
             "2" => $this->plugin->txt('input_stars_singlechar'),
             "3" => $this->plugin->txt('input_stars_spaces'),
             "4" => $this->plugin->txt('input_stars_implied_spaces'),
-            "5" => $this->plugin->txt('input_type_implied_spaces_single')
+            "5" => $this->plugin->txt('input_type_implied_spaces_single'),
+            "6" => $this->plugin->txt('input_stars_implied_spaces_functions'),
+            "7" => $this->plugin->txt('input_stars_implied_spaces_functions_single')
         ], $this->plugin->txt("input_insert_stars_info"))->withRequired(true)
             ->withValue($input->get_parameter('insertStars', 0));
         $inputs["syntaxHint"] = $this->factory->input()->field()->text($this->plugin->txt("input_syntax_hint"), $this->plugin->txt("input_syntax_hint_info"))

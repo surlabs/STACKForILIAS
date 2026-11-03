@@ -698,6 +698,8 @@ input_stars_singlechar#:#Insertar asteriscos asumiendo nombres de variables de s
 input_stars_spaces#:#Insertar asteriscos solo para espacios
 input_stars_implied_spaces#:#Insertar asteriscos para multiplicación implícita y para espacios
 input_type_implied_spaces_single#:#Insertar asteriscos asumiendo nombres de variables de solo un carácter, implícitos y para espacios
+input_stars_implied_spaces_functions#:#Insertar asteriscos para multiplicación implícita y para espacios, sin funciones de usuario
+input_stars_implied_spaces_functions_single#:#Insertar asteriscos para multiplicación implícita y para espacios, sin funciones de usuario y asumiendo nombres de variables de solo un carácter
 add_node#:#Agregar nodo
 add_prt#:#Agregar árboles de respuestas potenciales
 page_editor_compatibility_info#:#Tenga en cuenta que los cambios realizados a través del editor de páginas de ILIAS para preguntas de Stack no se pueden exportar en formato XML de Moodle. Esta funcionalidad está desarrollada específicamente para el contexto de ILIAS. Familiarícese especialmente con esta limitación si desea utilizar o exportar contenido fuera de ILIAS.

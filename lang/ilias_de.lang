@@ -701,6 +701,8 @@ input_stars_singlechar#:#Sternchen einfügen, indem von Variablennamen mit nur e
 input_stars_spaces#:#Sternchen nur für Leerzeichen einfügen
 input_stars_implied_spaces#:#Sternchen für implizierte Multiplikation und für Leerzeichen einfügen
 input_type_implied_spaces_single#:#Sternchen einfügen, indem von Variablennamen mit nur einem Zeichen ausgegangen wird, implizierte und für Leerzeichen
+input_stars_implied_spaces_functions#:#Sternchen für implizierte Multiplikation und für Leerzeichen einfügen, ohne benutzerdefinierte Funktionen
+input_stars_implied_spaces_functions_single#:#Sternchen für implizierte Multiplikation und für Leerzeichen einfügen, ohne benutzerdefinierte Funktionen, indem von Variablennamen mit nur einem Zeichen ausgegangen wird
 add_node#:#Knoten hinzufügen
 add_prt#:#Rückmeldebaum hinzufügen
 page_editor_compatibility_info#:#Bitte beachten Sie, dass Änderungen, die über den ILIAS Seiten-Editor für Stack-Fragen vorgenommen werden, nicht im Moodle-XML-Format exportiert werden können. Diese Funktionalität ist speziell für den ILIAS-Kontext entwickelt worden. Bitte machen Sie sich insbesondere mit dieser Einschränkung vertraut, wenn Sie Inhalte außerhalb von ILIAS verwenden oder exportieren möchten.

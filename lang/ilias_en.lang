@@ -695,6 +695,8 @@ input_stars_singlechar#:#Insert stars assuming single-character variable names
 input_stars_spaces#:#Insert stars for spaces only
 input_stars_implied_spaces#:#Insert stars for implied multiplication and for spaces
 input_type_implied_spaces_single#:#Insert stars assuming single-character variables, implied and for spaces
+input_stars_implied_spaces_functions#:#Insert stars for implied multiplication, spaces, and no user-functions
+input_stars_implied_spaces_functions_single#:#Insert stars for implied multiplication, spaces, no user-functions and assuming single-character variable names
 add_node#:#Add Node
 add_prt#:#Add Prt
 page_editor_compatibility_info#:#Please be aware that any edits made via the ILIAS page editor for stack-questions will not be exportable to the moodle-xml-format. This functionality is specifically designed for the ILIAS context. Ensure you familiarize yourself with this limitation, especially if you plan to use or export content outside of ILIAS.
