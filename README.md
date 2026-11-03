@@ -1,7 +1,7 @@
 <div alt style="text-align: center; transform: scale(.5);">
 	<picture>
-		<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/surlabs/STACKForILIAS/dev_11/templates/assets/stack-collage.png" />
-		<img alt="STACK" src="https://raw.githubusercontent.com/surlabs/STACKForILIAS/dev_11/templates/assets/stack-collage.png" />
+		<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/surlabs/STACKForILIAS/release_11/templates/assets/stack-collage.png" />
+		<img alt="STACK" src="https://raw.githubusercontent.com/surlabs/STACKForILIAS/release_11/templates/assets/stack-collage.png" />
 	</picture>
 </div>
 
@@ -50,7 +50,7 @@ cdn.mathjax.org or downloaded to your own web server. It has to be configured in
 ```bash
 git clone https://github.com/surlabs/STACKForILIAS.git ./assStackQuestion
 cd assStackQuestion
-git checkout dev_11
+git checkout release_11
 ```
 3. STACK uses the ILIAS composer autoloader functionality so, after installing or update the plugin, ensure you run on the ILIAS root folder
 ```bash
@@ -81,7 +81,7 @@ composer install --no-dev
 - SIG Mathe [Forum](https://docu.ilias.de/goto_docu_frm_7004.html)
 
 # Version History
-* The development version 11.0.x for **ILIAS 11** with the STACK Core version 4.5.0 can be found in the Github branch **dev_11**
+* The stable version 11.0.x for **ILIAS 11** with the STACK Core version 4.5.0 can be found in the Github branch **release_11**
 * The stable version 10.1.x for **ILIAS 10** with the STACK Core version 4.5.0 can be found in the Github branch **release_10**
 * The stable version 9.5.x for **ILIAS 9** with the STACK Core version 4.5.0 can be found in the Github branch **release_9**
 * The stable version 8.9.x for **ILIAS 8** with the STACK Core version 4.5.0 can be found in the Github branch **release_8**
