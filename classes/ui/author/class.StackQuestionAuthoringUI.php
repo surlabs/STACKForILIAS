@@ -590,7 +590,8 @@ class StackQuestionAuthoringUI
             "radio" => $this->plugin->txt('input_type_radio'),
             "units" => $this->plugin->txt('input_type_units'),
             "string" => $this->plugin->txt('input_type_string'),
-            "numerical" => $this->plugin->txt('input_type_numerical')
+            "numerical" => $this->plugin->txt('input_type_numerical'),
+            "parsons" => $this->plugin->txt('input_type_parsons')
         ], $this->plugin->txt("input_type_info"))->withRequired(true)
             ->withValue(assStackQuestionUtils::_getInputType($input));
         $inputs["teacher_answer"] = $this->factory->input()->field()->text($this->plugin->txt("input_model_answer"), $this->plugin->txt("input_model_answer_info"))->withRequired(true)

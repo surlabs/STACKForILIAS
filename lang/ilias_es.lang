@@ -621,6 +621,7 @@ maxima_libraries#:#Bibliotecas Maxima
 cas_maxima_libraries_info#:#Esta lista separada por comas de bibliotecas Maxima se carga automáticamente en Maxima. Solo se pueden usar bibliotecas compatibles, consulte la documentación. Las bibliotecas no se cargan automáticamente si utiliza una imagen Maxima optimizada para el rendimiento.
 input_type_string#:#Cadena de caracteres
 input_type_numerical#:#Numérico
+input_type_parsons#:#Parsons
 show_validation_no#:#No
 show_validation_yes_with_vars#:#Sí, con lista de variables
 show_validation_yes_without_vars#:#Sí, sin lista de variables

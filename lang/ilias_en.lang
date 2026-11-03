@@ -620,6 +620,7 @@ maxima_libraries#:#Maxima libraries
 cas_maxima_libraries_info#:#This is a comma separated list of Maxima library names which will be automatically loaded into Maxima. Only supported library names can be used: see the documentation for supported library names. These libraries will not be loaded if you have saved a maxima image to optimise performance.
 input_type_string#:#String
 input_type_numerical#:#Numerical
+input_type_parsons#:#Parsons
 show_validation_no#:#No
 show_validation_yes_with_vars#:#Yes, with variable list
 show_validation_yes_without_vars#:#Yes, without variable list

@@ -624,6 +624,7 @@ maxima_libraries#:#Maxima-Bibliotheken
 cas_maxima_libraries_info#:#Diese kommagetrennte Liste von Maxima-Bibliotheken wird autmatisch in Maxima geladen. Es können nur unterstützte Bibliotheken verwendet werden, siehe Dokumentation. Die Bibliotheken werden nicht automatisch geladen, wenn Sie ein Performance-optimiertes Maxima-Image verwenden.
 input_type_string#:#Zeichenkette
 input_type_numerical#:#Numerisch
+input_type_parsons#:#Parsons
 show_validation_no#:#Nein
 show_validation_yes_with_vars#:#Ja, mit Variablenliste
 show_validation_yes_without_vars#:#Ja, ohne Variablenliste

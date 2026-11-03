@@ -243,6 +243,8 @@ class assStackQuestionUtils
 	public static function _getInputType($input): string
 	{
 		switch ($input) {
+            case is_a($input, 'stack_parsons_input'):
+                return 'parsons';
             case is_a($input, 'stack_string_input'):
                 return 'string';
 			case is_a($input, 'stack_boolean_input'):
