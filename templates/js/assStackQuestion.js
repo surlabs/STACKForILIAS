@@ -299,7 +299,11 @@ il.assStackQuestion = new function () {
 				remove_spinner();
 				$('#validation_xqcas_' + question_id + '_' + input_name).html(data);
 				if (typeof MathJax !== 'undefined') {
-					MathJax.typesetPromise();
+					if (typeof MathJax.typesetPromise === 'function') {
+						MathJax.typesetPromise();
+					} else if (typeof MathJax.Hub !== 'undefined') {
+						MathJax.Hub.Queue(["Typeset", MathJax.Hub]);
+					}
 				}
 			}).catch(function (error) {
 			console.log(error.responseText);
