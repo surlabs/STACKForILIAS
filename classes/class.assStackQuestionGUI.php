@@ -639,7 +639,8 @@ class assStackQuestionGUI extends assQuestionGUI
 				$tabs->addTarget("edit_page", $this->ctrl->getLinkTargetByClass("ilAssQuestionPageGUI", "edit"), array("edit", "insert", "exec_pg"), "", "", true);
 			}
 
-			// edit page
+			// preview
+			$this->ctrl->setParameterByClass("ilAssQuestionPreviewGUI", "q_id", $this->object->getId());
 			$tabs->addTarget("preview", $this->ctrl->getLinkTargetByClass("ilAssQuestionPreviewGUI", "show"), array("preview"), "ilAssQuestionPageGUI", "", true);
 		}
 
