@@ -256,6 +256,10 @@
       "function": "s",
       "variable": "s"
   },
+  "DEL_CMD": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
   "Delta": {
       "function": "s",
       "variable": "s"
@@ -280,6 +284,10 @@
   "GGFINFINITY": {
       "variable": "f"
   },
+  "GNUPLOT_CMD": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
   "Gamma": {
       "function": "s",
       "variable": "s"
@@ -291,6 +299,10 @@
       "function": "f"
   },
   "Gosper_in_Zeilberger": {
+      "variable": "f"
+  },
+  "IMAGE_DIR": {
+      "globalyforbiddenvariable": true,
       "variable": "f"
   },
   "Iota": {
@@ -310,6 +322,10 @@
   },
   "Lindstedt": {
       "function": "f"
+  },
+  "MAXIMA_PLATFORM": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
   },
   "MAX_ORD": {
       "variable": "f"
@@ -332,6 +348,22 @@
   "Omicron": {
       "function": "s",
       "variable": "s"
+  },
+  "PLOT_SIZE": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
+  "PLOT_TAGS": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
+  "PLOT_TERMINAL": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
+  "PLOT_TERM_OPT": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
   },
   "Pi": {
       "function": "s",
@@ -359,6 +391,10 @@
   "Theta": {
       "function": "s",
       "variable": "s"
+  },
+  "URL_BASE": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
   },
   "Upsilon": {
       "function": "s",
@@ -540,7 +576,8 @@
       "function": "?"
   },
   "adjust_external_format": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "af": {
       "function": "f"
@@ -1084,6 +1121,10 @@
   "breakup": {
       "variable": "?"
   },
+  "browser": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
   "Btu": {
       "variable": "s"
   },
@@ -1348,6 +1389,10 @@
   "circulant_graph": {
       "function": "?"
   },
+  "cl_eval": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
+  },
   "clear_edge_weight": {
       "function": "?"
   },
@@ -1430,6 +1475,10 @@
   },
   "combine": {
       "function": "s"
+  },
+  "common_lisp": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
   },
   "commutative": {
       "property": "?"
@@ -1536,7 +1585,8 @@
       "variable": "?"
   },
   "contour_plot": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "contract": {
       "function": "?"
@@ -1560,7 +1610,8 @@
       "function": "s"
   },
   "copy_file": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "copy_graph": {
       "function": "f"
@@ -1833,7 +1884,8 @@
       "built-in": true
   },
   "delete_file": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "deleten": {
       "function": "f"
@@ -2149,6 +2201,10 @@
   "draw_graph_program": {
       "variable": "f"
   },
+  "draw_renderer": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
   "drawdf": {
       "function": "?"
   },
@@ -2367,6 +2423,10 @@
   "eval_string": {
       "function": "f",
       "globalyforbiddenfunction": true
+  },
+  "eval_string_lisp": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
   },
   "even": {
       "property": "?"
@@ -2729,7 +2789,8 @@
       "function": "f"
   },
   "flush_output": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "flushd": {
       "function": "f"
@@ -2971,6 +3032,14 @@
   "gensym": {
       "function": "?"
   },
+  "gentran": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
+  },
+  "gentranout": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
+  },
   "geo_amortization": {
       "function": "?"
   },
@@ -2990,7 +3059,8 @@
       "function": "?"
   },
   "geomview_command": {
-      "variable": "?"
+      "variable": "f",
+      "globalyforbiddenvariable": true
   },
   "geosum": {
       "function": "s"
@@ -3058,7 +3128,8 @@
       "globalyforbiddenvariable": true
   },
   "gnuplot_command": {
-      "variable": "?"
+      "variable": "f",
+      "globalyforbiddenvariable": true
   },
   "gnuplot_curve_styles": {
       "variable": "f"
@@ -3073,7 +3144,8 @@
       "variable": "f"
   },
   "gnuplot_file_args": {
-      "variable": "?"
+      "variable": "f",
+      "globalyforbiddenvariable": true
   },
   "gnuplot_file_name": {
       "globalyforbiddenvariable": true,
@@ -3084,6 +3156,14 @@
       "variable": "f"
   },
   "gnuplot_pm3d": {
+      "variable": "f"
+  },
+  "gnuplot_png_term_command": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
+  "gnuplot_postamble": {
+      "globalyforbiddenvariable": true,
       "variable": "f"
   },
   "gnuplot_preamble": {
@@ -3103,15 +3183,24 @@
   "gnuplot_restart": {
       "function": "f"
   },
+  "gnuplot_send": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
+  },
   "gnuplot_start": {
       "function": "f"
+  },
+  "gnuplot_svg_term_command": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
   },
   "gnuplot_term": {
       "globalyforbiddenvariable": true,
       "variable": "f"
   },
   "gnuplot_view_args": {
-      "variable": "?"
+      "variable": "f",
+      "globalyforbiddenvariable": true
   },
   "go": {
       "function": "?"
@@ -5173,7 +5262,8 @@
       "function": "f"
   },
   "oid_to_octets": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "omega": {
       "function": "s",
@@ -5288,6 +5378,10 @@
   },
   "outofpois": {
       "function": "f"
+  },
+  "output_format_for_help": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
   },
   "packagefile": {
       "globalyforbiddenvariable": true,
@@ -6446,6 +6540,10 @@
       "function": "f",
       "globalyforbiddenfunction": true
   },
+  "read_Lisp_string": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
+  },
   "read_array": {
       "function": "f",
       "globalyforbiddenfunction": true
@@ -6481,6 +6579,10 @@
       "function": "f",
       "globalyforbiddenfunction": true
   },
+  "read_string": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
+  },
   "read_xpm": {
       "function": "f",
       "globalyforbiddenfunction": true
@@ -6500,6 +6602,10 @@
   "readonly": {
       "function": "f",
       "globalyforbiddenfunction": true
+  },
+  "readvexp": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
   },
   "real": {
       "property": "?"
@@ -6611,7 +6717,8 @@
       "function": "f"
   },
   "remove_plot_option": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "remove_vertex": {
       "function": "?"
@@ -6633,7 +6740,8 @@
       "function": "f"
   },
   "rename_file": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "reset": {
       "function": "f",
@@ -6641,6 +6749,10 @@
   },
   "reset_displays": {
       "function": "?"
+  },
+  "reset_plot_options": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
   },
   "residue": {
       "function": "s"
@@ -6732,7 +6844,8 @@
       "function": "f"
   },
   "rmdir": {
-      "function": "?"
+      "function": "f",
+      "globalyforbiddenfunction": true
   },
   "rmxchar": {
       "globalyforbiddenvariable": true,
@@ -7010,6 +7123,10 @@
   },
   "show": {
       "function": "?"
+  },
+  "show_openplot": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
   },
   "showcomps": {
       "function": "f"
@@ -7680,6 +7797,10 @@
   "surface_hide": {
       "variable": "f"
   },
+  "svg_file": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
   "symbolp": {
       "function": "s",
       "built-in": true
@@ -7827,6 +7948,14 @@
       "variable": "t",
       "contextvariable": "true"
   },
+  "texend": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
+  },
+  "texinit": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
+  },
   "texput": {
       "function": "?",
       "contextvariable": "true",
@@ -7889,6 +8018,10 @@
   },
   "tlimswitch": {
       "variable": "s"
+  },
+  "to_cl": {
+      "globalyforbiddenfunction": true,
+      "function": "f"
   },
   "to_lisp": {
       "function": "f",
@@ -8210,6 +8343,10 @@
   "uriemann": {
       "function": "f"
   },
+  "url_base": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
+  },
   "us_ascii_only": {
       "variable": "?"
   },
@@ -8467,6 +8604,10 @@
   },
   "xlabel": {
       "variable": "s"
+  },
+  "xmaxima_plot_command": {
+      "globalyforbiddenvariable": true,
+      "variable": "f"
   },
   "xor": {
       "operator": "s",
