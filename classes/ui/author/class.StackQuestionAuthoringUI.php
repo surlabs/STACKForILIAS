@@ -595,7 +595,7 @@ class StackQuestionAuthoringUI
         ], $this->plugin->txt("input_type_info"))->withRequired(true)
             ->withValue(assStackQuestionUtils::_getInputType($input));
         $inputs["teacher_answer"] = $this->factory->input()->field()->text($this->plugin->txt("input_model_answer"), $this->plugin->txt("input_model_answer_info"))->withRequired(true)
-            ->withValue($input->get_teacher_answer());
+            ->withValue((string) $input->get_teacher_answer());
         $inputs["boxWidth"] = $this->factory->input()->field()->numeric($this->plugin->txt("input_box_size"), $this->plugin->txt("input_box_size_info"))
             ->withValue($input->get_parameter('boxWidth'));
         $inputs["insertStars"] = $this->factory->input()->field()->select($this->plugin->txt("input_insert_stars"), [
