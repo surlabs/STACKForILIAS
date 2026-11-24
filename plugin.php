@@ -20,7 +20,7 @@
 
 $id = "xqcas";
  
-$version = "11.0.2";
+$version = "11.0.3";
 
 $ilias_min_version = "11.00";
 $ilias_max_version = "11.999";
